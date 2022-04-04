@@ -6,15 +6,15 @@ import HelloWorld from '@/components/HelloWorld.vue'
 <template>
   <header>
     <img alt="Vue logo" class="logo" 
-    src="@/assets/logo.svg" width="125" height="125" />
+    src="https://media.kartable.fr/uploads/finalImages/final_54fea4b46fda54.98690718.png" width="50%;" />
 
     <div class="wrapper">
       <HelloWorld msg="Super Calculateur" />
 
-      <nav>
+      <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink> 
-      </nav>
+      </nav> -->
     </div>
   </header>
 

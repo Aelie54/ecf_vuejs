@@ -4,10 +4,10 @@ export const usePiStore = defineStore({
 
   id: "sphere",
   state: () => ({
-    rayon: 0,
-    perimetre: 0,
-    surface: 0,
-    volume: 0,
+    rayon: "",
+    perimetre: "",
+    surface: "",
+    volume: "",
   }),
 
   getters: {

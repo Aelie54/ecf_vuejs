@@ -8,9 +8,8 @@
 <!--contenu de cette vue, présentation et illustration de l'IMC -->
 <template>
     <main>
-        
-        <h1>Calculateur de dimensions d’un cercle et d'une sphère</h1>
-        <br />
+        <h2> Calculateur de dimensions </h2> <br>
+
         <p>Pour calculter le périmètre d'un cercle à partir de son rayon : 
             2 * Pi * Rayon </p>
         <br />

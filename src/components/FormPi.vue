@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1> Calculateur </h1><br>
+    <br>
 
     <form @submit.prevent="calcul">
 
       <label for="rayon"> Entrer le rayon : </label>
 
       <input type="number" name="taille" id="taille" 
-      placeholder="en cm"  min="0" max="250" v-model="sphere.rayon" />
+      placeholder="en cm"  min="1" max="1000" v-model="sphere.rayon" />
         
         <br>
 
@@ -29,27 +29,33 @@
 
     //pour utiliser les données du store : initialisation
     const sphere = reactive({
-    rayon: 0,
-    perimetre: 0,
-    surface: 0,
-    volume: 0,
+    rayon: "",
+    perimetre: "",
+    surface: "",
+    volume: "",
     });
 
     //fonction permettant le calcul 
     //du submit
     function calcul() {
 
-        //calculs
-        let calculateSurf = 3.14 * sphere.rayon * sphere.rayon ;
+        let R = sphere.rayon ;
+        
+        let calculatePerim = (
+          2*3.1416*Number(R)
+          ).toPrecision(3);
 
-        let calculatePerim = 2 * 3.14 * sphere.rayon;
+        let calculateSurf = (
+          Number(3.1416 * Math.pow(Number(R), 3))
+          ).toPrecision(3);
 
-        let calculateVol = 1.33 * 3.14 * sphere.rayon * sphere.rayon * sphere.rayon;
+        let calculateVol = (
+          Number(1.333 * 3.1416 * Math.pow(Number(R), 3))
+          ).toPrecision(3);
 
-        //les données qui font references Aux chAmps inputs qui
-        //sont envoyées dans le store pour réutilisation dont
-        //la donnée de l'imc que l'on retrouvera dans le
-        //tableau recap
+        //les données qui font references aux champs inputs qui
+        //sont envoyées dans le store pour réutilisation 
+        // dans tableau recap
         store.rayon = sphere.rayon ;
         store.perimetre = calculatePerim ;
         store.surface = calculateSurf ;

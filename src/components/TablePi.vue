@@ -2,10 +2,10 @@
   <table>
     <thead>
       <tr>
-        <th scope="col">rayon</th>
-        <th scope="col" >perimètre </th>
-        <th scope="col">surface</th>
-        <th scope="col">Volume</th>
+        <th scope="col">Rayon <br>en cm</th>
+        <th scope="col" >Perimètre <br> en cm </th>
+        <th scope="col">Surface <br>en cm <sup>2</sup></th>
+        <th scope="col">Volume <br> en cm <sup>3</sup></th>
       </tr>
     </thead>
     <tbody>
@@ -27,7 +27,7 @@
   //il faut déjà un import
   import { usePiStore } from "@/stores/Sphere";
 
-  //et ne pas oublierle const pour utiliser le store
+  //et ne pas oublier le const pour utiliser le store
   const store = usePiStore();
 
 </script>
