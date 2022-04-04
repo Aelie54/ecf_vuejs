@@ -9,8 +9,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
     src="https://media.kartable.fr/uploads/finalImages/final_54fea4b46fda54.98690718.png" width="50%;" />
 
     <div class="wrapper">
-      <HelloWorld msg="Super Calculateur" />
-
+      <!-- <HelloWorld msg="Super Calculateur" /> -->
       <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink> 

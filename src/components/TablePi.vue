@@ -2,16 +2,16 @@
   <table>
     <thead>
       <tr>
-        <th scope="col">Rayon <br>en cm</th>
-        <th scope="col" >Perimètre <br> en cm </th>
-        <th scope="col">Surface <br>en cm <sup>2</sup></th>
-        <th scope="col">Volume <br> en cm <sup>3</sup></th>
+        <!-- <th scope="col">Rayon <br>en cm</th> -->
+        <th scope="col" >Périmètre du cercle (cm) </th>
+        <th scope="col">Aire du cercle (cm) <sup>2</sup></th>
+        <th scope="col">Volume de la sphère (cm <sup>3</sup>)</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <!-- Données du store en "store. ""-->
-        <td>{{ store.rayon }}</td>
+        <!-- <td>{{ store.rayon }}</td> -->
         <td> {{ store.perimetre }}</td>
         <td>{{ store.surface }}</td>
         <td>{{ store.volume }}</td>

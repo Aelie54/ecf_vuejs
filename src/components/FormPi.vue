@@ -4,12 +4,12 @@
 
     <form @submit.prevent="calcul">
 
-      <label for="rayon"> Entrer le rayon : </label>
+      <label for="rayon" style="color:red"> Rayon (en cm): </label>
 
       <input type="number" name="taille" id="taille" 
-      placeholder="en cm"  min="1" max="1000" v-model="sphere.rayon" />
+      placeholder="en cm"  min="1" max="1000" v-model="sphere.rayon" style="width : 60px;" />
         
-        <br>
+      <br><br>
 
       <input type="submit" value="Calculer" /><br><br>
 
@@ -65,10 +65,18 @@
 </script>
 
 <style>
-label
-{
-	display: block;
-	width: 150px;
-	float: left;
-}
+  label
+  {
+    display: block;
+    width: 150px;
+    float: left;
+  }
+
+  input[type="submit"]{
+  cursor:pointer;
+  background-color:yellow;
+    border-radius: 8px;
+    padding: 0.5em;
+  }
+
 </style>
