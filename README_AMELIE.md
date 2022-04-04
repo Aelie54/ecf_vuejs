@@ -20,7 +20,7 @@ dans le formulaire (FormPi.vue), il y a dans le template un input où le client 
 Lors du submit, un écouteur (ligne5) permet de lancer la fonction calcul qui est présente dans le script.
 
 dans script il y a l'importation du store dans le quel figure un objet sphere avec rayon/perimetre/surface et volume définis dedans.
-j'ai pris soin de créer un objet, qui est dans une constante nommée "sphere", de type réactive, que j'initialise et qui permettra ensuite de l'envoyer dans le store(lignes 59 à 62) à chaque modification du input(ou rayon, donnée d'entrée).
+j'ai pris soin de créer un objet, qui est dans une constante nommée "sphere", de type réactive, que j'initialise et qui permettra ensuite de l'envoyer dans le store(lignes 59 à 62) à chaque modification du input(ou rayon, donnée d'entrée) avec clic sur le bouton "Calculer".
 
 le store => src>sories>Sphere.ts
 
